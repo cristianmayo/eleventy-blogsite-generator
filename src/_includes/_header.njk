@@ -1,0 +1,29 @@
+<header class="container p-0">
+    <section id="carouselCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+        {% for post in collections.featured | sort(false, false, date) | reverse %}
+            <article class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+                {% if post.data.image %}
+                    <img src="{{ post.data.image }}" class="d-block w-100">
+                {% else %}
+                    <img src="/assets/img/_featured.png" class="d-block w-100">
+                {% endif %}
+                <div class="carousel-caption md-block bg-dark">
+                    <h4>{{ post.data.title }}</h4>
+                    <p class="md-block">Posted by {{ post.data.author }} on {{ post.date }}</p>
+                    <p class="md-block">{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="btn btn-primary p-2">Read more...</a>
+                </div>
+            </article>
+        {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+</header>

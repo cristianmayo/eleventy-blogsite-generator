@@ -1,0 +1,6 @@
+{
+    "layout": "blog.njk",
+    "tags": "post",
+    "author": "Cristian Mayo",
+    "author-thumbnail": "/assets/img/_author.png"
+}

@@ -1,0 +1,30 @@
+---
+title: Home
+layout: '_base.njk'
+---
+<div class="row">
+    <div class="col">
+        <h6>RECENT POSTS</h1>
+        <hr class="text-dark mt-0 pt-0">
+        <section>
+            {% for post in collections.post | sort(false, false, date) | reverse | take(10) %}
+                <article class="row bg-dark text-light blogpost__recent shadow">
+                {% if post.data.image %}
+                    <div class="col-lg-6 order-lg-2 p-0 blogpost__featured_img">
+                        <img src="{{ post.data.image }}" alt="Sample Feature Image">
+                    </div>
+                {% endif %}
+                    <div class="col order-lg-1 blogpost__overview">
+                        <h3>{{ post.data.title }}</h3>
+                        <p class="text-muted">by {{ post.data.author }} on {{ post.data.date }}</p>
+                        <p>{{ post.data.description }}</p>
+                        <a href="{{ post.url }}" class="btn btn-primary p-2">Read more...</a>
+                    </div>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+    <div class="col-lg-3 col-md-12">
+        {% include '_sidebar.njk' %}
+    </div>
+</div>

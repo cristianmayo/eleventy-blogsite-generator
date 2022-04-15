@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-blogsite-generator",
+  "version": "1.0.0",
+  "description": "11ty Static Site Generator for Blog CMS",
+  "main": "src/index.njk",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianmayo/eleventy-blogsite-generator.git"
+  },
+  "keywords": ["11ty", "eleventy", "nunjucks", "static-site-generator", "blog-cms"],
+  "author": "cristianmayo",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/cristianmayo/eleventy-blogsite-generator/issues"
+  },
+  "homepage": "https://github.com/cristianmayo/eleventy-blogsite-generator#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}

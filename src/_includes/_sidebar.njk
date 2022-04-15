@@ -1,0 +1,16 @@
+<aside>
+    <h6>ARCHIVE BY CATEGORIES</h1>
+    <hr class="text-dark mt-0 pt-0">
+    <section>
+        {% for category, categoryPosts in collections.postsByCategory %}
+        <label>{{ category }}</label>
+        <ul>
+            {% for post in categoryPosts | reverse %}
+            <li>
+                <a class="small" href="{{ post.url }}" target="_blank">{{ post.data.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </section>
+</aside>
