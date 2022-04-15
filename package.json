@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/cristianmayo/eleventy-blogsite-generator.git"
   },
-  "keywords": ["11ty", "eleventy", "nunjucks", "static-site-generator", "blog-cms"],
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "nunjucks",
+    "static-site-generator",
+    "blog-cms"
+  ],
   "author": "cristianmayo",
   "license": "MIT License",
   "bugs": {
@@ -19,6 +25,8 @@
   },
   "homepage": "https://github.com/cristianmayo/eleventy-blogsite-generator#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "lodash": "^4.17.21",
+    "luxon": "^2.3.1"
   }
 }

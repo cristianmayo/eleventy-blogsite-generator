@@ -1,0 +1,8 @@
+{
+    "layout": "_base.njk",
+    "siteName": "11ty Blogsite Generator",
+    "author": "Cristian Mayo",
+    "authorThumbnail": "/assets/img/_author.png",
+    "githubProfile": "https://github.com/cristianmayo",
+    "linkedProfile": "https://www.linkedin.com/in/cristianmayo"
+}

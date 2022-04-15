@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col">
                     <h2>{{ title }}</h2>
-                    <small>Published on {{ date }}</small>
+                    <small>Published on {{ date | postDate }}</small>
                     <p>
                         <label class="badge bg-primary">{{ category }}</label>
                         {{ content | safe }}

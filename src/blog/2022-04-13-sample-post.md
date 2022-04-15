@@ -2,6 +2,7 @@
 title: Third Sample Post
 date: 2022-04-13
 category: Category 3
+tags: ["featured"]
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 image: "/assets/img/3.jpg"
 ---

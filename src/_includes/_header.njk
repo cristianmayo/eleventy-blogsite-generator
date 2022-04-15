@@ -9,8 +9,9 @@
                     <img src="/assets/img/_featured.png" class="d-block w-100">
                 {% endif %}
                 <div class="carousel-caption md-block bg-dark">
+                    <label class="badge bg-secondary m-3">Featured Post # {{ loop.index }}</label>
                     <h4>{{ post.data.title }}</h4>
-                    <p class="md-block">Posted by {{ post.data.author }} on {{ post.date }}</p>
+                    <p class="md-block">Posted by {{ post.data.author }} on {{ post.date | postDate }}</p>
                     <p class="md-block">{{ post.data.description }}</p>
                     <a href="{{ post.url }}" class="btn btn-primary p-2">Read more...</a>
                 </div>

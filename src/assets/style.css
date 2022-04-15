@@ -1,5 +1,9 @@
 * {
     box-sizing: content-box !important;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 body {
@@ -86,6 +90,7 @@ footer {
 }
 
 .blogpost__recent {
+    min-height: 15rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
     padding: 0;

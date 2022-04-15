@@ -2,6 +2,7 @@
 title: Second Sample Post
 date: 2022-04-12
 category: Category 2
+tags: ["featured"]
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
 image: "/assets/img/2.jpg"
 ---

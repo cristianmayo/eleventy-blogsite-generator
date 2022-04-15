@@ -15,7 +15,7 @@ layout: '_base.njk'
                 <li>
                     <a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a>
                     <span class="text-white-50"> | </span>
-                    <span> by {{ post.data.author }} on {{ post.date }}</span>
+                    <span> by {{ post.data.author }} on {{ post.date | postDate }}</span>
                 </li>
                 {% endfor %}
             </ul>
