@@ -3,7 +3,7 @@ JAMstack Template Repository of Static-site Generator for Blog CMS.
 
 
 Technology Used:
-`11ty` | `Nunjucks` | `Bootstrap` | `FontAwesome`
+`11ty` `Nunjucks` `Frontmatter` `Bootstrap` `FontAwesome` `
 
 
 Resource Links:
@@ -17,10 +17,9 @@ Resource Links:
 # Configuration Setup
 
 ## Azure Static Web App
-...
-
-## Netlify
-...
+1. Create a new service "Azure Static Web Apps" in [Azure Portal](https://portal.azure.com)
+2. Provide all required details for creating the new service
+3. Signin with your dedicated Github repository
 
 ## Netlify CMS
 ...
