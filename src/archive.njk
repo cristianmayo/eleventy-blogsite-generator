@@ -3,26 +3,28 @@ title: Archive
 layout: '_base.njk'
 ---
 
-<div class="row">
-    <div class="col">
-        <h6>ARCHIVE BY PUBLISH YEAR</h1>
-        <hr class="text-dark mt-0 pt-0">
-        <section>
-            {% for year, yearPosts in collections.postsByYear %}
-            <h2>{{ year }}</h2>
-            <ul>
-                {% for post in yearPosts | reverse %}
-                <li>
-                    <a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a>
-                    <span class="text-white-50"> | </span>
-                    <span> by {{ post.data.author }} on {{ post.date | postDate }}</span>
-                </li>
+<main class="container">
+    <div class="row">
+        <div class="col">
+            <h6>ARCHIVE BY PUBLISH YEAR</h1>
+            <hr class="text-dark mt-0 pt-0">
+            <section>
+                {% for year, yearPosts in collections.postsByYear %}
+                <h2>{{ year }}</h2>
+                <ul>
+                    {% for post in yearPosts | reverse %}
+                    <li>
+                        <a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a>
+                        <span class="text-muted mx-2"> | </span>
+                        <span>Posted on {{ post.date | postDate }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
                 {% endfor %}
-            </ul>
-            {% endfor %}
-        </section>
+            </section>
+        </div>
+        <div class="col-lg-3">
+            {% include '_sidebar.njk' %}
+        </div>
     </div>
-    <div class="col-lg-3">
-        {% include '_sidebar.njk' %}
-    </div>
-</div>
+</main>

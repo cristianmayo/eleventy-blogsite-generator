@@ -1,3 +1,4 @@
+/*-- Enforce content-box sizing to all elements including those with boder-box default sizing --*/
 * {
     box-sizing: content-box !important;
     -webkit-transition: 1s ease-in-out;
@@ -21,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: darkorange;
     text-decoration: none !important;
+}
+
+a:hover {
+    color: whitesmoke;
 }
 
 ul {
@@ -62,10 +67,6 @@ footer {
 
 .container, .container-fluid {
     width: calc(100% - 2rem) !important;
-}
-
-.carousel a:hover {
-    color: darkorange !important;
 }
 
 .carousel-item img {
@@ -141,7 +142,17 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
+/*-- 4K Device --*/
+@media (max-width: 2560px) {}
+
+/*-- Laptop (Large) Device --*/
+@media (max-width: 1440px) {}
+
+/*-- Laptop Device --*/
+@media (max-width: 1024px) {}
+
+/*-- Tablet --*/
+@media (max-width: 768px) {
 
     .carousel-item img {
         max-height: 20rem;
@@ -157,3 +168,6 @@ footer {
     }
 
 }
+
+/*-- Mobile --*/
+@media (max-width: 425px) {}
