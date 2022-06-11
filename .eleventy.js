@@ -4,6 +4,7 @@ const { DateTime } = require("luxon");
 module.exports = function(config) {
     config.setUseGitIgnore(true);
     config.addPassthroughCopy("./src/assets/**/*");
+    config.addPassthroughCopy("./src/admin/**/*");
 
     config.addShortcode("dateToday", () => `${new Date().toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)}`);
     config.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
